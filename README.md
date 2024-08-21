@@ -12,20 +12,26 @@ This project is an example of implementing Domain-Driven Design (DDD) principles
 - **Sequential GUID Generator**: A custom GUID generator to provide sequential unique identifiers.
 - **Product Aggregate**: An example aggregate root with `Product` as the main entity.
 - **Money Value Object**: An example implementation of a Value Object.
+- **Logging System**: A centralized logging system for consistent log management across the application.
+- **Error Handling**: A custom error type for domain-specific error handling.
+- **Configuration Management**: A flexible configuration system using environment variables and configuration files.
 
 ## Project Structure
 
 ```
 src/
 ├── crosscutting/
-│   └── guid_generator.rs   # Sequential GUID Generator
+│   ├── guid_generator.rs   # Sequential GUID Generator
+│   ├── logging.rs          # Logging system implementation
+│   ├── error.rs            # Custom error types and handling
+│   └── config.rs           # Configuration management
 ├── domain/
 │   ├── aggregate_root.rs   # Definition of AggregateRoot trait
 │   ├── entity_base.rs      # Definition of EntityBase trait
 │   ├── product.rs          # Implementation of Product entity as an AggregateRoot
 │   ├── value_object.rs     # Definition of ValueObject trait
 │   └── value_objects/
-│       ├── money.rs        # Implementation of money as a ValueObject
+│       ├── money.rs        # Implementation of Money as a ValueObject
 │       └── identifier.rs   # Implementation of Identifier as a ValueObject
 └── lib.rs                  # Library entry point
 ```

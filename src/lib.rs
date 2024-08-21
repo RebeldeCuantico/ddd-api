@@ -2,6 +2,9 @@
 
 pub mod crosscutting {
     pub mod guid_generator;
+    pub mod logging;
+    pub mod error;
+    pub mod config;
 }
 
 pub mod domain {
