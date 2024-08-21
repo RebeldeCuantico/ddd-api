@@ -1,6 +1,5 @@
 // src/domain/aggregate_root.rs
 use crate::domain::entity_base::EntityBase;
-use uuid::Uuid;
 
 pub trait AggregateRoot: EntityBase {
    }

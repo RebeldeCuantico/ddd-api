@@ -7,7 +7,7 @@ pub trait EntityBase {
 }
 
 impl PartialEq for dyn EntityBase {
-    fn eq(&self, other: &self) -> bool {
-        self.id() == other.id();
+    fn eq(&self, other: &Self) -> bool {
+        self.id() == other.id()
     }
 }
