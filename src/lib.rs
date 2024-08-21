@@ -10,6 +10,7 @@ pub mod domain {
     pub mod value_object;
     pub mod value_objects {
         pub mod identifier;
+        pub mod money;
     }
     pub mod product;
 }

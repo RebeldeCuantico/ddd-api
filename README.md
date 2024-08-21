@@ -11,6 +11,7 @@ This project is an example of implementing Domain-Driven Design (DDD) principles
 - **AggregateRoot**: A trait that marks an entity as the root of an aggregate.
 - **Sequential GUID Generator**: A custom GUID generator to provide sequential unique identifiers.
 - **Product Aggregate**: An example aggregate root with `Product` as the main entity.
+- **Money Value Object**: An example implementation of a Value Object.
 
 ## Project Structure
 
@@ -22,9 +23,10 @@ src/
 │   ├── aggregate_root.rs   # Definition of AggregateRoot trait
 │   ├── entity_base.rs      # Definition of EntityBase trait
 │   ├── product.rs          # Implementation of Product entity as an AggregateRoot
+│   ├── value_object.rs     # Definition of ValueObject trait
 │   └── value_objects/
-│       ├── identifier.rs   # Implementation of Identifier as a ValueObject
-│       └── value_object.rs # Definition of ValueObject trait
+│       ├── money.rs        # Implementation of money as a ValueObject
+│       └── identifier.rs   # Implementation of Identifier as a ValueObject
 └── lib.rs                  # Library entry point
 ```
 
